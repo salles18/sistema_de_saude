@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sistema de Saúde - Agendamento de Consultas e Vacinação
 
-## Getting Started
+Este projeto é um sistema de saúde desenvolvido para facilitar o agendamento de consultas médicas e alertar pacientes idosos sobre a necessidade de vacinação. A aplicação é composta por três partes principais: uma API em Laravel para o backend, um frontend web em React (Next.js) e um aplicativo móvel em Flutter.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Backend (API)**: Laravel
+- **Frontend Web**: React (Next.js)
+- **Aplicativo Móvel**: Flutter (Android)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Agendamento de Consultas
+- Pacientes podem agendar consultas com médicos disponíveis.
+- Médicos podem visualizar e confirmar consultas agendadas.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 2. Gerenciamento de Pacientes e Médicos
+- CRUD completo para pacientes e médicos.
+- Informações detalhadas de pacientes (histórico médico, informações pessoais).
+- Informações de médicos (especialidade, horários de atendimento).
 
-## Learn More
+### 3. Alerta de Vacinação para Idosos
+- Sistema de alerta que notifica pacientes idosos sobre a necessidade de vacinação.
+- Integração com calendário para lembretes automáticos.
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Frontend Web (React - Next.js)
+- Interface responsiva e amigável para agendamento de consultas e gerenciamento de pacientes/médicos.
+- Dashboard para visualização rápida de consultas agendadas e alertas de vacinação.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 5. Aplicativo Móvel (Flutter - Android)
+- Aplicativo para pacientes receberem alertas de vacinação e agendarem consultas diretamente pelo celular.
+- Integração com notificações push para lembretes de consultas e vacinas.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Instalação e Configuração
 
-## Deploy on Vercel
+### Pré-requisitos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Node.js (para frontend React)
+- Composer (para Laravel)
+- Flutter SDK (para aplicativo Android)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Backend (API - Laravel)
+
+1. Clone o repositório do backend:
+
+   ```bash
+   git clone https://github.com/seu-usuario/api-saude-laravel.git
+   cd api-saude-laravel
